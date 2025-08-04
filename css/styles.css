@@ -805,7 +805,7 @@ nav a:hover::after {
   overflow: hidden;
   box-shadow: var(--sombra-hover);
   animation: float 6s ease-in-out infinite;
-  border: 5px solid rgba(255, 255, 255, 0.5);
+  /* border: 5px solid rgba(255, 255, 255, 0.5); */
 }
 
 .personas-image img {
