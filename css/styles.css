@@ -1244,14 +1244,34 @@ footer::before {
   header {
     flex-direction: column;
     padding: 0.8rem 5%;
+    position: relative;
   }
 
   .logo {
     margin-bottom: 0.8rem;
   }
 
+  .logo i {
+    font-size: 1.2rem;
+  }
+
+  .logo span {
+    font-size: 1rem;
+  }
+
   nav {
     margin-bottom: 0.8rem;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+
+  nav ul li a {
+    font-size: x-small;
+  }
+  .header-buttons button {
+    font-size: 0.6rem;
   }
 
   .hero {
