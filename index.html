@@ -1,381 +1,406 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Gaia | Ayuda Social</title>
-    <!-- Font Awesome para iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-    <!-- Botón flotante de WhatsApp -->
-    <a href="https://wa.me/+573011959402" class="whatsapp-float">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <i class="fas fa-leaf"></i>
-            <span>PROYECTO GAIA</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#animales">Animales</a></li>
-                <li><a href="#mision">Misión</a></li>
-                <li><a href="#historia">Historia</a></li>
-                <li><a href="#personas">Personas</a></li>
-                <!-- <li><a href="#tienda">Tienda</a></li> -->
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="header-buttons">
-            <button>Donar</button>
-            <button>Voluntario</button>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Transformando vidas, protegiendo al planeta</h1>
-            <p>Un proyecto de ayuda social integral para animales y personas necesitadas</p>
-            <div class="hero-buttons">
-                <button>Únete a nosotros</button>
-                <button>Ver nuestro trabajo</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Ayuda a Animales -->
-    <section id="animales" class="animales">
-        <div class="section-header">
-            <h2>Rescatando a los animales de la calle</h2>
-            <p>Dándoles una segunda oportunidad</p>
-        </div>
-        <div class="animales-content">
-            <div class="animal-info">
-                <i class="fas fa-paw"></i>
-                <h3>Rescate</h3>
-                <p>Recogemos animales abandonados y les brindamos atención veterinaria.</p>
-            </div>
-            <div class="animal-info">
-                <i class="fas fa-home"></i>
-                <h3>Refugio</h3>
-                <p>Proporcionamos un hogar temporal mientras encuentran una familia.</p>
-            </div>
-            <div class="animal-info">
-                <i class="fas fa-stethoscope"></i>
-                <h3>Salud</h3>
-                <p>Vacunación, esterilización y tratamientos para mejorar su calidad de vida.</p>
-            </div>
-            <div class="animal-info">
-                <i class="fas fa-heart"></i>
-                <h3>Adopción</h3>
-                <p>Buscamos familias responsables que les den amor y cuidado permanente.</p>
-            </div>
-        </div>
-        <div class="animales-image">
-            <!-- Imagen de placeholder para animales -->
-            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/semana/5METULR6HBBEHF73UWYQVVFMBM.jpg" alt="Animales rescatados">
-        </div>
-    </section>
-
-    <!-- Sección Misión, Visión y Objetivos -->
-    <section id="mision" class="mision-vision">
-        <div class="section-header">
-            <h2>Nuestro propósito</h2>
-            <p>Lo que nos guía y motiva cada día</p>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto Gaia | Ayuda Social</title>
+        <!-- Font Awesome para iconos -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
         
-        <div class="mv-container">
-            <div class="mv-card">
-                <i class="fas fa-bullseye"></i>
-                <h3>Misión</h3>
-                <p>Proteger a los animales abandonados y mejorar la calidad de vida de las personas en situación de vulnerabilidad a través de programas integrales de ayuda social.</p>
-            </div>
-            
-            <div class="mv-card">
-                <i class="fas fa-eye"></i>
-                <h3>Visión</h3>
-                <p>Ser un referente en ayuda social donde humanos y animales convivan en armonía, con comunidades libres de abandono y pobreza extrema.</p>
-            </div>
-            
-            <div class="mv-card">
-                <i class="fas fa-flag-checkered"></i>
-                <h3>Objetivos</h3>
-                <ul>
-                    <li>Rescatar 500 animales anuales</li>
-                    <li>Alimentar a 1,000 familias mensuales</li>
-                    <li>Crear 200 empleos temporales</li>
-                    <li>Educar en valores a 5,000 niños</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="icon" type="image/jpg" href="./assets/logo.jpeg">
+    </head>
+    <body>
+        <!-- Botón flotante de WhatsApp -->
+        <!-- <a href="https://wa.me/+573011959402" class="whatsapp-float">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a> -->
 
-    <!-- Sección Historia del Proyecto -->
-    <section id="historia" class="historia">
-        <div class="section-header">
-            <h2>Nuestra historia</h2>
-            <p>El origen de un sueño que se hizo realidad</p>
-        </div>
-        
-        <div class="historia-content">
-            <div class="historia-image">
-                <!-- Imagen de placeholder para historia -->
-                <img src="./assets/imagen-historia-1.jpg" alt="Fundadores del Proyecto Gaia">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                <span>PROYECTO GAIA</span>
             </div>
-            
-            <div class="historia-text">
-                <p>La hipótesis Gaia es un modelo interpretativo que afirma que la presencia de la vida en la Tierra fomenta unas condiciones adecuadas para el mantenimiento de la biósfera.</p>
-                
-                <p>​ Según la hipótesis Gaia (cuyo nombre es tomado de la antigua diosa griega Gaia), la atmósfera y la parte superficial del planeta Tierra se comportan como un sistema donde la vida, su componente característico, se encarga de autorregular sus condiciones esenciales tales como la temperatura, composición química y salinidad en el caso de los océanos.</p>
-                
-                <p>Gaia se comportaría como un sistema autorregulado, que tiende al equilibrio, lo que lo asimila a un ser vivo. La hipótesis fue ideada por el químico James Lovelock en 1969​ (aunque publicada en 1979), siendo apoyada y extendida por la bióloga Lynn Margulis.</p>
-                
-                <button><a href="">Conoce más sobre nuestra historia</a></button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Ayuda a Personas -->
-    <section id="personas" class="personas">
-        <div class="section-header">
-            <h2>Ayudando a las personas necesitadas</h2>
-            <p>Nuestros programas de apoyo social</p>
-        </div>
-        
-        <div class="personas-programs">
-            <div class="program">
-                <i class="fas fa-utensils"></i>
-                <h3>Alimentación</h3>
-                <p>Distribuimos alimentos a familias en situación de pobreza extrema.</p>
-            </div>
-            
-            <div class="program">
-                <i class="fas fa-briefcase-medical"></i>
-                <h3>Salud</h3>
-                <p>Jornadas médicas gratuitas y apoyo psicológico para personas en situación de calle.</p>
-            </div>
-            
-            <div class="program">
-                <i class="fas fa-graduation-cap"></i>
-                <h3>Educación</h3>
-                <p>Programas de alfabetización y capacitación laboral para desempleados.</p>
-            </div>
-            
-            <div class="program">
-                <i class="fas fa-hands-helping"></i>
-                <h3>Empleo</h3>
-                <p>Conectamos personas con oportunidades laborales y apoyamos emprendimientos.</p>
-            </div>
-        </div>
-        
-        <div class="galeria-button">
-            <a href="galeria.html">
-                <i class="fas fa-images"></i>
-                Ver galería de nuestros proyectos
-            </a>
-        </div>
-        
-        <div class="personas-image">
-            <!-- Imagen de placeholder para personas -->
-            <img src="https://concejodebogota.gov.co/cbogota/site/artic/20150527/imag/foto_0000000520150527161701.jpg" alt="Ayuda a personas necesitadas">
-        </div>
-    </section>
-
-    <!-- Sección Tienda de Camisetas -->
-    <!-- <section id="tienda" class="tienda">
-        <div class="section-header">
-            <h2>Nuestra tienda solidaria</h2>
-            <p>Compra nuestras camisetas y apoya nuestra causa</p>
-        </div>
-        
-        <div class="productos">
-            <div class="producto">
-                <div class="producto-image">
-
-                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Camiseta Proyecto Gaia">
-                </div>
-                <h3>Camiseta "Salva Vidas"</h3>
-                <p>Modelo unisex - Varios colores</p>
-                <div class="precio">$25.000</div>
-                <button>Comprar ahora</button>
-            </div>
-            
-            <div class="producto">
-                <div class="producto-image">
-
-                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Camiseta Proyecto Gaia">
-                </div>
-                <h3>Camiseta "Rescate Animal"</h3>
-                <p>Modelo unisex - Varios colores</p>
-                <div class="precio">$25.000</div>
-                <button>Comprar ahora</button>
-            </div>
-            
-            <div class="producto">
-                <div class="producto-image">
-
-                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Camiseta Proyecto Gaia">
-                </div>
-                <h3>Camiseta "Gaia"</h3>
-                <p>Modelo unisex - Varios colores</p>
-                <div class="precio">$25.000</div>
-                <button>Comprar ahora</button>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Sección Contacto y Voluntariado -->
-    <section id="contacto" class="contacto-voluntariado">
-        <div class="section-header">
-            <h2>Contáctanos y sé parte del cambio</h2>
-            <p>Tu ayuda hace la diferencia</p>
-        </div>
-        
-        <div class="contacto-container">
-            <div class="formulario">
-                <h3>Envíanos un mensaje</h3>
-                <form>
-                    <div class="form-group">
-                        <label for="nombre">Nombre completo</label>
-                        <input type="text" id="nombre" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" id="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" id="telefono">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" rows="5" required></textarea>
-                    </div>
-                    
-                    <button type="submit">Enviar mensaje</button>
-                </form>
-            </div>
-            
-            <div class="voluntariado">
-                <h3>¡Conviértete en voluntario!</h3>
-                <p>Únete a nuestro equipo de voluntarios y ayuda a transformar vidas.</p>
-                
-                <form>
-                    <div class="form-group">
-                        <label for="v-nombre">Nombre completo</label>
-                        <input type="text" id="v-nombre" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="v-email">Correo electrónico</label>
-                        <input type="email" id="v-email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="v-telefono">Teléfono</label>
-                        <input type="tel" id="v-telefono" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="interes">Área de interés</label>
-                        <select id="interes" required>
-                            <option value="">Selecciona un área</option>
-                            <option value="animales">Rescate animal</option>
-                            <option value="alimentos">Distribución de alimentos</option>
-                            <option value="educacion">Programas educativos</option>
-                            <option value="medico">Apoyo médico</option>
-                            <option value="eventos">Organización de eventos</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="disponibilidad">Disponibilidad</label>
-                        <select id="disponibilidad" required>
-                            <option value="">Selecciona disponibilidad</option>
-                            <option value="fines">Fines de semana</option>
-                            <option value="entre">Entre semana</option>
-                            <option value="completo">Tiempo completo</option>
-                            <option value="esporadico">Eventos esporádicos</option>
-                        </select>
-                    </div>
-                    
-                    <button type="submit">Registrarme como voluntario</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-col">
-                <div class="logo">
-                    <i class="fas fa-leaf"></i>
-                    <span>PROYECTO GAIA</span>
-                </div>
-                <p>Trabajando juntos por un mundo mejor para todos los seres vivos.</p>
-                
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            
-            <div class="footer-col">
-                <h4>Enlaces rápidos</h4>
+            <nav>
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#animales">Rescate animal</a></li>
-                    <li><a href="#mision">Misión y Visión</a></li>
-                    <li><a href="#historia">Nuestra historia</a></li>
-                    <li><a href="#personas">Ayuda a personas</a></li>
+                    <li><a href="#animales">Animales</a></li>
+                    <li><a href="#contaminacion">Contaminación</a></li>
+                    <li><a href="#mision">Misión</a></li>
+                    <li><a href="#historia">Historia</a></li>
+                    <li><a href="#personas">Personas</a></li>
                     <!-- <li><a href="#tienda">Tienda</a></li> -->
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
+            </nav>
+            <div class="header-buttons">
+                <!-- <button>Donar</button> -->
+                <button>Voluntario</button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Transformando vidas, protegiendo al planeta</h1>
+                <p>Un proyecto de ayuda social integral para animales y personas necesitadas</p>
+                <div class="hero-buttons">
+                    <a href="#contacto"><button>Únete a nosotros</button></a>
+                    <!-- <a href="#contacto"><button>Ver nuestro trabajo</button></a> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Ayuda a Animales -->
+        <section id="animales" class="animales">
+            <div class="section-header">
+                <h2>Rescatando a los animales de la calle</h2>
+                <p>Dándoles una segunda oportunidad</p>
+                <p>Cada animal merece tener una vida digna</p>
+            </div>
+            <div class="animales-content">
+                <div class="animal-info">
+                    <i class="fas fa-paw"></i>
+                    <h3>Rescate</h3>
+                    <p>Recogemos animales abandonados y con tu ayuda les brindariamos atención veterinaria.</p>
+                </div>
+                <div class="animal-info">
+                    <i class="fas fa-home"></i>
+                    <h3>Refugio</h3>
+                    <p>Proporcionamos un hogar de permanencia hasta sus últimos días.</p>
+                </div>
+                <div class="animal-info">
+                    <i class="fas fa-stethoscope"></i>
+                    <h3>Salud</h3>
+                    <p>Para mejorar su calidad de vida estaremos muy atentos en su vacunacion, esterilización y demás tratamientos.</p>
+                </div>
+                <!-- <div class="animal-info">
+                    <i class="fas fa-heart"></i>
+                    <h3>Adopción</h3>
+                    <p>Buscamos familias responsables que les den amor y cuidado permanente.</p>
+                </div> -->
+            </div>
+            <div class="animales-image">
+                <!-- Imagen de placeholder para animales -->
+                <img src="https://cloudfront-us-east-1.images.arcpublishing.com/semana/5METULR6HBBEHF73UWYQVVFMBM.jpg" alt="Animales rescatados">
+            </div>
+        </section>
+
+        <!-- Sección Problemática Contaminación -->
+        <section id="contaminacion" class="contaminacion">
+            <div class="section-header">
+                <h2>Problemática de la Contaminación</h2>
+                <p>Un desafío global que requiere acción inmediata</p>
+            </div>
+            <div class="contaminacion-content">
+                <div class="contaminacion-text">
+                    <p>La contaminación ambiental es uno de los mayores problemas que enfrenta nuestro planeta. En las ciudades, la contaminación del aire, del agua y del suelo afecta la salud de millones de personas y la biodiversidad.</p>
+                    <p>Los residuos plásticos, las emisiones de gases de efecto invernadero, la deforestación y la pérdida de hábitats naturales son solo algunos de los factores que contribuyen a esta crisis.</p>
+                    <p>En Proyecto Gaia, trabajamos para combatir la contaminación a través de programas de educación, reciclaje, reforestación y promoción de energías limpias. ¡Únete a nosotros en esta lucha por un planeta más sano!</p>
+                </div>
+                <div class="contaminacion-image">
+                    <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Contaminación en las ciudades">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Misión, Visión y Objetivos -->
+        <section id="mision" class="mision-vision">
+            <div class="section-header">
+                <h2>Nuestro propósito</h2>
+                <p>Lo que nos guía y motiva cada día</p>
             </div>
             
-            <div class="footer-col">
-                <h4>Programas</h4>
-                <ul>
-                    <li><a href="#">Adopciones</a></li>
-                    <li><a href="#">Comedores comunitarios</a></li>
-                    <li><a href="#">Capacitación laboral</a></li>
-                    <li><a href="#">Jornadas médicas</a></li>
-                    <li><a href="#">Rescate de animales</a></li>
-                </ul>
+            <div class="mv-container">
+                <div class="mv-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Misión</h3>
+                    <p>Ayudar y proteger a los animales abandonados del mundo, desarrollar estrategias para el cuidado del medio ambiente contrarrestado el cambio climático. Mejorar la calidad de vida de las personas en situación de vulnerabilidad a través de programas integrales de ayuda social.</p>
+                </div>
+                
+                <div class="mv-card">
+                    <i class="fas fa-eye"></i>
+                    <h3>Visión</h3>
+                    <p>Ser un referente a nivel mundial en Ayuda social donde los  animales, platas y personas convivan en armonía, con comunidades libres de abandono y pobreza extrema.</p>
+                </div>
+                
+                <div class="mv-card">
+                    <i class="fas fa-flag-checkered"></i>
+                    <h3>Objetivos</h3>
+                    <ul>
+                        <li>Rescatar 500 animales anuales</li>
+                        <li>Alimentar a 1,000 familias mensuales</li>
+                        <li>Crear 200 empleos temporales</li>
+                        <li>Educar en valores a 5,000 niños</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Historia del Proyecto -->
+        <section id="historia" class="historia">
+            <div class="section-header">
+                <h2>Nuestra historia</h2>
+                <p>El origen de un sueño que se hizo realidad</p>
             </div>
             
-            <div class="footer-col">
-                <h4>Contacto</h4>
-                <ul class="contact-info">
-                    <li><i class="fas fa-map-marker-alt"></i> Calle Solidaridad #123, Ciudad</li>
-                    <li><i class="fas fa-phone"></i> +57 123 456 7890</li>
-                    <li><i class="fas fa-envelope"></i> info@proyectogaia.org</li>
-                    <li><i class="fas fa-clock"></i> Lunes a Viernes: 8am - 5pm</li>
-                </ul>
+            <div class="historia-content">
+                <div class="historia-image">
+                    <!-- Imagen de placeholder para historia -->
+                    <img src="./assets/imagen-historia-1.jpg" alt="Fundadores del Proyecto Gaia">
+                </div>
+                
+                <div class="historia-text">
+                    <p>La hipótesis Gaia es un modelo interpretativo que afirma que la presencia de la vida en la Tierra fomenta unas condiciones adecuadas para el mantenimiento de la biósfera.</p>
+                    
+                    <p>​ Según la hipótesis Gaia (cuyo nombre es tomado de la antigua diosa griega Gaia), la atmósfera y la parte superficial del planeta Tierra se comportan como un sistema donde la vida, su componente característico, se encarga de autorregular sus condiciones esenciales tales como la temperatura, composición química y salinidad en el caso de los océanos.</p>
+                    
+                    <p>Gaia se comportaría como un sistema autorregulado, que tiende al equilibrio, lo que lo asimila a un ser vivo. La hipótesis fue ideada por el químico James Lovelock en 1969​ (aunque publicada en 1979), siendo apoyada y extendida por la bióloga Lynn Margulis.</p>
+                    
+                    <button><a href="">Conoce más sobre nuestra historia</a></button>
+                </div>
             </div>
-        </div>
-        
-        <div class="copyright">
-            <p>&copy; 2023 Proyecto Gaia. Todos los derechos reservados.</p>
-            <div class="legal-links">
-                <a href="#">Política de Privacidad</a>
-                <a href="#">Términos y Condiciones</a>
+        </section>
+
+        <!-- Sección Ayuda a Personas -->
+        <section id="personas" class="personas">
+            <div class="section-header">
+                <h2>Ayudando a las personas necesitadas</h2>
+                <p>Nuestros programas de apoyo social</p>
             </div>
-        </div>
-    </footer>
-</body>
+            
+            <div class="personas-programs">
+                <div class="program">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Alimentación</h3>
+                    <p>Distribuimos alimentos a familias en situación de pobreza extrema.</p>
+                </div>
+                
+                <!-- <div class="program">
+                    <i class="fas fa-briefcase-medical"></i>
+                    <h3>Salud</h3>
+                    <p>Jornadas médicas gratuitas y apoyo psicológico para personas en situación de calle.</p>
+                </div> -->
+                
+                <div class="program">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Educación</h3>
+                    <p>Programas de alfabetización y capacitación laboral para desempleados.</p>
+                </div>
+                
+                <div class="program">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Empleo</h3>
+                    <p>Creamos oportunidades laborales en campos diseñados para el mejoramiento de la sostenibildad y la vida cotidiana.</p>
+                </div>
+            </div>
+            
+            <div class="galeria-button">
+                <a href="galeria.html">
+                    <i class="fas fa-images"></i>
+                    Ver galería de nuestros proyectos
+                </a>
+            </div>
+            
+            <div class="personas-image">
+                <!-- Imagen de placeholder para personas -->
+                <img src="https://concejodebogota.gov.co/cbogota/site/artic/20150527/imag/foto_0000000520150527161701.jpg" alt="Ayuda a personas necesitadas">
+            </div>
+        </section>
+
+        <!-- Sección Tienda de Camisetas -->
+        <!-- <section id="tienda" class="tienda">
+            <div class="section-header">
+                <h2>Nuestra tienda solidaria</h2>
+                <p>Compra nuestras camisetas y apoya nuestra causa</p>
+            </div>
+            
+            <div class="productos">
+                <div class="producto">
+                    <div class="producto-image">
+
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Camiseta Proyecto Gaia">
+                    </div>
+                    <h3>Camiseta "Salva Vidas"</h3>
+                    <p>Modelo unisex - Varios colores</p>
+                    <div class="precio">$25.000</div>
+                    <button>Comprar ahora</button>
+                </div>
+                
+                <div class="producto">
+                    <div class="producto-image">
+
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Camiseta Proyecto Gaia">
+                    </div>
+                    <h3>Camiseta "Rescate Animal"</h3>
+                    <p>Modelo unisex - Varios colores</p>
+                    <div class="precio">$25.000</div>
+                    <button>Comprar ahora</button>
+                </div>
+                
+                <div class="producto">
+                    <div class="producto-image">
+
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Camiseta Proyecto Gaia">
+                    </div>
+                    <h3>Camiseta "Gaia"</h3>
+                    <p>Modelo unisex - Varios colores</p>
+                    <div class="precio">$25.000</div>
+                    <button>Comprar ahora</button>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Sección Contacto y Voluntariado -->
+    <section id="contacto" class="contacto-voluntariado">
+            <div class="section-header">
+                <h2>Contáctanos y sé parte del cambio</h2>
+                <p>Tu ayuda hace la diferencia</p>
+            </div>
+            
+            <div class="contacto-container">
+                <div class="formulario">
+                    <h3>Envíanos un mensaje</h3>
+                    <form id="whatsapp-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit">Enviar mensaje</button>
+                    </form>
+                </div>
+                
+                <div class="voluntariado">
+                    <h3>¡Conviértete en parte de Nosotros!</h3>
+                    <p>Únete a nuestro equipo de voluntarios y ayuda a transformar millones de vidas</p>
+                    
+                    <form action="https://formspree.io/f/mqkrbeyd" method="POST">
+                        <div class="form-group">
+                            <label for="v-nombre">Nombre completo</label>
+                            <input type="text" id="v-nombre" name="nombre" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="v-email">Correo electrónico</label>
+                            <input type="email" id="v-email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="v-telefono">Teléfono</label>
+                            <input type="tel" id="v-telefono" name="telefono" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="interes">Área de interés</label>
+                            <select id="interes" name="area_interes" required>
+                                <option value="">Selecciona un área</option>
+                                <option value="animales">Rescate y cuidado animales</option>
+                                <option value="alimentos">Restauración y protección del medio ambiente</option>
+                                <option value="educacion">Apoyo personas en condición de vulnerabilidad</option>
+                                <option value="medico">Se parte Equipo de trabajo</option>
+                                <option value="eventos">Organización de eventos</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="disponibilidad">Disponibilidad</label>
+                            <select id="disponibilidad" name="disponibilidad" required>
+                                <option value="">Selecciona disponibilidad</option>
+                                <option value="fines">Fines de semana</option>
+                                <option value="entre">Entre semana</option>
+                                <option value="completo">Tiempo completo</option>
+                                <option value="esporadico">Eventos esporádicos</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit">Registrarme como voluntario</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-col">
+                    <div class="logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>PROYECTO GAIA</span>
+                    </div>
+                    <p>Trabajando juntos por un mundo mejor para todos los seres vivos.</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1FzKJ1qPTs/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/dariusg242?utm_source=qr&igsh=aXo3Y29kem9jMncy"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/Darius65846512?t=fPJCFdja8wMLXQdF4sTeZQ&s=08"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@dariusg64?_t=ZS-8yStuxDaJGC&_r=1"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.reddit.com/u/DariusproyecGaia2024/s/EGJNYBCkbF"><i class="fab fa-reddit"></i></a>
+                        <a href="https://youtube.com/@proyectogaia-darius?si=s3MiHWcUJWPwvtRG"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#animales">Rescate animal</a></li>
+                        <li><a href="#contaminacion">Contaminación</a></li> 
+                        <li><a href="#mision">Misión y Visión</a></li>
+                        <li><a href="#historia">Nuestra historia</a></li>
+                        <li><a href="#personas">Ayuda a personas</a></li>
+                        <!-- <li><a href="#tienda">Tienda</a></li> -->
+                    </ul>
+                </div>
+                
+                <!-- <div class="footer-col">
+                    <h4>Programas</h4>
+                    <ul>
+                        <li><a href="#">Adopciones</a></li>
+                        <li><a href="#">Comedores comunitarios</a></li>
+                        <li><a href="#">Capacitación laboral</a></li>
+                        <li><a href="#">Jornadas médicas</a></li>
+                        <li><a href="#">Rescate de animales</a></li>
+                    </ul>
+                </div> -->
+                
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Calle Solidaridad #123, Ciudad</li>
+                        <li><i class="fas fa-phone"></i> +57 123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> proyectogaia@gmail.com</li>
+                        <!-- <li><i class="fas fa-clock"></i> Lunes a Viernes: 8am - 5pm</li> -->
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Proyecto Gaia. Todos los derechos reservados.</p>
+                <div class="legal-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/main.js"></script>
+    </body>
 </html>

@@ -2,7 +2,7 @@
 
 ## cosas que faltan:
 
-1. hacer boceto de la pagina
+1. ~~hacer boceto de la pagina~~
 2. poner primero la ayuda a los animales
 3. poner historia del proyecto gaia
 4. poner mision, vision y quienes son
