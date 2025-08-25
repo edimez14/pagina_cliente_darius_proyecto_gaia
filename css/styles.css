@@ -4,7 +4,7 @@
   --verde-secundario: #5daa60;
   --azul-primario: #0288d1;
   --azul-secundario: #4fc3f7;
-  --color-tierra: #795548;
+  --color-tierra: #362721;
   --color-tierra-claro: #a1887f;
   --color-tierra-suave: #f5e9e3;
   --color-arena: #f8f4e9;
@@ -26,7 +26,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: var(--color-negro);
-  background-color: var(--color-arena);
+  background-color: var(--color-blanco);
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -180,7 +180,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(248, 244, 233, 0.95);
+  background-color: rgba(253, 253, 253, 0.95);
   z-index: 1000;
   transition: var(--transicion);
   backdrop-filter: blur(5px);
@@ -198,10 +198,8 @@ header.hidden {
   gap: 10px;
 }
 
-.logo i {
-  font-size: 1.8rem;
-  color: var(--verde-primario);
-  transition: var(--transicion);
+.logo img {
+  width: 2.4rem;
 }
 
 .logo:hover i {
@@ -409,7 +407,7 @@ nav a:hover::after {
 
 /* --- SECCIÓN ANIMALES MEJORADA --- */
 .animales {
-  background-color: var(--color-tierra-suave);
+  background-color: var(--color-blanco);
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -425,7 +423,7 @@ nav a:hover::after {
 .animal-info {
   text-align: center;
   padding: 2rem;
-  background-color: var(--color-blanco);
+  background-color: var(--color-tierra-suave);
   border-radius: 20px;
   box-shadow: var(--sombra-suave);
   transition: var(--transicion);
@@ -514,7 +512,7 @@ nav a:hover::after {
 
 /* --- SECCIÓN CONTAMINACIÓN --- */
 .contaminacion {
-  background-color: var(--color-tierra-suave);
+  background-color: var(--color-blanco);
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -644,7 +642,7 @@ nav a:hover::after {
 
 /* --- SECCIÓN HISTORIA MEJORADA --- */
 .historia {
-  background-color: var(--color-tierra-suave);
+  background-color: var(--color-blanco);
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -850,7 +848,7 @@ nav a:hover::after {
 
 /* --- SECCIÓN TIENDA MEJORADA --- */
 .tienda {
-  background-color: var(--color-tierra-suave);
+  background-color: var(--color-blanco);
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -1110,9 +1108,8 @@ footer::before {
   gap: 10px;
 }
 
-.footer-col .logo i {
-  color: var(--color-blanco);
-  font-size: 2rem;
+.footer-col .logo img {
+  width: 2.4rem;
 }
 
 .footer-col .logo span {
