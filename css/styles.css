@@ -304,8 +304,7 @@ nav a:hover::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80")
-    center/cover no-repeat;
+  background: url("../assets/mudno\ mejor.jpg") center/cover no-repeat;
   opacity: 0.35;
   z-index: -1;
 }
@@ -407,7 +406,7 @@ nav a:hover::after {
 
 /* --- SECCIÓN ANIMALES MEJORADA --- */
 .animales {
-  background-color: var(--color-blanco);
+  background-color: var(--azul-primario);
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -512,7 +511,7 @@ nav a:hover::after {
 
 /* --- SECCIÓN CONTAMINACIÓN --- */
 .contaminacion {
-  background-color: var(--color-blanco);
+  background-color: var(--azul-primario);
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -536,6 +535,7 @@ nav a:hover::after {
 .contaminacion-image {
   border-radius: 20px;
   overflow: hidden;
+  height: 50%;
   box-shadow: var(--sombra-hover);
   animation: float 6s ease-in-out infinite;
 }
@@ -642,7 +642,7 @@ nav a:hover::after {
 
 /* --- SECCIÓN HISTORIA MEJORADA --- */
 .historia {
-  background-color: var(--color-blanco);
+  background-color: var(--azul-primario);
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
