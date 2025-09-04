@@ -350,16 +350,6 @@ nav a:hover::after {
   font-size: 0.9rem;
 }
 
-/* .hero-buttons a button:first-child {
-  background: linear-gradient(
-    135deg,
-    var(--verde-secundario),
-    var(--azul-primario)
-  );
-  color: var(--color-blanco);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-} */
-
 .hero-buttons a button:first-child {
   background-color: transparent;
   color: var(--verde-primario);
