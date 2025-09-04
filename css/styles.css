@@ -406,7 +406,11 @@ nav a:hover::after {
 
 /* --- SECCIÓN ANIMALES MEJORADA --- */
 .animales {
-  background-color: var(--azul-primario);
+  background: linear-gradient(
+    135deg,
+    rgba(46, 125, 50, 0.1) 0%,
+    rgba(2, 136, 209, 0.1) 100%
+  );
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -511,7 +515,11 @@ nav a:hover::after {
 
 /* --- SECCIÓN CONTAMINACIÓN --- */
 .contaminacion {
-  background-color: var(--azul-primario);
+  background: linear-gradient(
+    135deg,
+    rgba(46, 125, 50, 0.1) 0%,
+    rgba(2, 136, 209, 0.1) 100%
+  );
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -642,7 +650,11 @@ nav a:hover::after {
 
 /* --- SECCIÓN HISTORIA MEJORADA --- */
 .historia {
-  background-color: var(--azul-primario);
+  background: linear-gradient(
+    135deg,
+    rgba(46, 125, 50, 0.1) 0%,
+    rgba(2, 136, 209, 0.1) 100%
+  );
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
