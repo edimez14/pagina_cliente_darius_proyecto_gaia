@@ -254,7 +254,11 @@
             <div class="contacto-container">
                 <div class="formulario">
                     <h3>Envíanos un mensaje</h3>
-                    <form id="whatsapp-form">
+                    <form id="whatsapp-form"action="https://formsubmit.co/proyectogaia1979@gmail.com" method="POST">
+                        <!-- Añadir estos campos ocultos para personalizar el correo -->
+                        <input type="hidden" name="_subject" value="Nueva mensaje - Proyecto Gaia">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
                         <div class="form-group">
                             <label for="nombre">Nombre completo</label>
                             <input type="text" id="nombre" name="nombre" required>
@@ -269,28 +273,28 @@
                             <label for="pais">País</label>
                             <select id="pais" name="pais" required>
                                 <option value="">Selecciona tu país</option>
-                                <option value="AR">Argentina</option>
-                                <option value="BO">Bolivia</option>
-                                <option value="CL">Chile</option>
-                                <option value="CO" selected>Colombia</option>
-                                <option value="CR">Costa Rica</option>
-                                <option value="CU">Cuba</option>
-                                <option value="DO">República Dominicana</option>
-                                <option value="EC">Ecuador</option>
-                                <option value="SV">El Salvador</option>
-                                <option value="GT">Guatemala</option>
-                                <option value="HN">Honduras</option>
-                                <option value="MX">México</option>
-                                <option value="NI">Nicaragua</option>
-                                <option value="PA">Panamá</option>
-                                <option value="PY">Paraguay</option>
-                                <option value="PE">Perú</option>
-                                <option value="PR">Puerto Rico</option>
-                                <option value="UY">Uruguay</option>
-                                <option value="VE">Venezuela</option>
-                                <option value="ES">España</option>
-                                <option value="US">Estados Unidos</option>
-                                <option value="OT">Otro país</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Colombia" selected>Colombia</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="República Dominicana">República Dominicana</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="México">México</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Panamá">Panamá</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Perú">Perú</option>
+                                <option value="Puerto Rico">Puerto Rico</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="España">España</option>
+                                <option value="Estados Unidos">Estados Unidos</option>
+                                <option value="Otro país">Otro país</option>
                             </select>
                         </div>
                         
@@ -358,28 +362,28 @@
                             <label for="v-pais">País</label>
                             <select id="v-pais" name="pais" required>
                                 <option value="">Selecciona tu país</option>
-                                <option value="AR">Argentina</option>
-                                <option value="BO">Bolivia</option>
-                                <option value="CL">Chile</option>
-                                <option value="CO" selected>Colombia</option>
-                                <option value="CR">Costa Rica</option>
-                                <option value="CU">Cuba</option>
-                                <option value="DO">República Dominicana</option>
-                                <option value="EC">Ecuador</option>
-                                <option value="SV">El Salvador</option>
-                                <option value="GT">Guatemala</option>
-                                <option value="HN">Honduras</option>
-                                <option value="MX">México</option>
-                                <option value="NI">Nicaragua</option>
-                                <option value="PA">Panamá</option>
-                                <option value="PY">Paraguay</option>
-                                <option value="PE">Perú</option>
-                                <option value="PR">Puerto Rico</option>
-                                <option value="UY">Uruguay</option>
-                                <option value="VE">Venezuela</option>
-                                <option value="ES">España</option>
-                                <option value="US">Estados Unidos</option>
-                                <option value="OT">Otro país</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Colombia" selected>Colombia</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="República Dominicana">República Dominicana</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="México">México</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Panamá">Panamá</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Perú">Perú</option>
+                                <option value="Puerto Rico">Puerto Rico</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="España">España</option>
+                                <option value="Estados Unidos">Estados Unidos</option>
+                                <option value="Otro país">Otro país</option>
                             </select>
                         </div>
                         
@@ -417,11 +421,11 @@
                             <label for="interes">Área de interés</label>
                             <select id="interes" name="area_interes" required>
                                 <option value="">Selecciona un área</option>
-                                <option value="animales">Rescate y cuidado animales</option>
-                                <option value="alimentos">Restauración y protección del medio ambiente</option>
-                                <option value="educacion">Apoyo personas en condición de vulnerabilidad</option>
-                                <option value="medico">Se parte Equipo de trabajo</option>
-                                <option value="eventos">Organización de eventos</option>
+                                <option value="Rescate y cuidado animales">Rescate y cuidado animales</option>
+                                <option value="Restauración y protección del medio ambiente">Restauración y protección del medio ambiente</option>
+                                <option value="Apoyo personas en condición de vulnerabilidad">Apoyo personas en condición de vulnerabilidad</option>
+                                <option value="Se parte del Equipo de trabajo">Se parte del Equipo de trabajo</option>
+                                <option value="Organización de eventos">Organización de eventos</option>
                                 <option value="donaciones">Donaciones</option>
                             </select>
                         </div>
@@ -430,10 +434,10 @@
                             <label for="disponibilidad">Disponibilidad</label>
                             <select id="disponibilidad" name="disponibilidad" required>
                                 <option value="">Selecciona disponibilidad</option>
-                                <option value="fines">Fines de semana</option>
-                                <option value="entre">Entre semana</option>
-                                <option value="completo">Tiempo completo</option>
-                                <option value="esporadico">Eventos esporádicos</option>
+                                <option value="Fines de semana">Fines de semana</option>
+                                <option value="Entre semana">Entre semana</option>
+                                <option value="Tiempo completo">Tiempo completo</option>
+                                <option value="Eventos esporádico">Eventos esporádicos</option>
                             </select>
                         </div>
                         
