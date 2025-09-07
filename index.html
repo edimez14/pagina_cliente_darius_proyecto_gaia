@@ -8,7 +8,7 @@
         <meta name="keywords" content="proyecto gaia, ayuda social, rescate animal, protección ambiental, contaminación, voluntariado, animales abandonados, ayuda personas necesitadas">
         <meta name="author" content="Proyecto Gaia">
         <meta name="robots" content="index, follow">
-        
+         
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://proyecto-gaia.pages.dev/">
@@ -59,11 +59,6 @@
         <link rel="icon" type="image/jpg" href="./assets/logo.jpeg">
     </head>
     <body>
-        <!-- Botón flotante de WhatsApp -->
-        <!-- <a href="https://wa.me/+573011959402" class="whatsapp-float">
-            <i class="fa-brands fa-whatsapp"></i>
-        </a> -->
-
         <!-- Header -->
         <header>
             <div class="logo">
@@ -219,9 +214,9 @@
             
             <div class="personas-programs">
                 <div class="program">
-                    <i class="fas fa-utensils"></i>
-                    <h3>Alimentación</h3>
-                    <p>Distribuimos alimentos a familias en situación de pobreza extrema.</p>
+                    <i class="fa-solid fa-hand-holding-hand"></i>
+                    <h3>Ayuda</h3>
+                    <p>Brindar a obtener empleos, un sustento para las familias en situación de pobreza extrema y así tengan una alimentación digna</p>
                 </div>
                 
                 <!-- <div class="program">
@@ -233,7 +228,7 @@
                 <div class="program">
                     <i class="fas fa-graduation-cap"></i>
                     <h3>Educación</h3>
-                    <p>Programas de alfabetización y capacitación laboral para desempleados.</p>
+                    <p>Capacitación gratuita para el buen trato hacia los animales de compañía y otros</p>
                 </div>
                 
                 <div class="program">
@@ -243,64 +238,14 @@
                 </div>
             </div>
             
-            <div class="galeria-button">
-                <a href="galeria.html">
-                    <i class="fas fa-images"></i>
-                    Ver galería de nuestros proyectos
-                </a>
-            </div>
-            
             <div class="personas-image">
                 <!-- Imagen de placeholder para personas -->
                 <img src="https://concejodebogota.gov.co/cbogota/site/artic/20150527/imag/foto_0000000520150527161701.jpg" alt="Ayuda a personas necesitadas">
             </div>
         </section>
 
-        <!-- Sección Tienda de Camisetas -->
-        <!-- <section id="tienda" class="tienda">
-            <div class="section-header">
-                <h2>Nuestra tienda solidaria</h2>
-                <p>Compra nuestras camisetas y apoya nuestra causa</p>
-            </div>
-            
-            <div class="productos">
-                <div class="producto">
-                    <div class="producto-image">
-
-                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Camiseta Proyecto Gaia">
-                    </div>
-                    <h3>Camiseta "Salva Vidas"</h3>
-                    <p>Modelo unisex - Varios colores</p>
-                    <div class="precio">$25.000</div>
-                    <button>Comprar ahora</button>
-                </div>
-                
-                <div class="producto">
-                    <div class="producto-image">
-
-                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Camiseta Proyecto Gaia">
-                    </div>
-                    <h3>Camiseta "Rescate Animal"</h3>
-                    <p>Modelo unisex - Varios colores</p>
-                    <div class="precio">$25.000</div>
-                    <button>Comprar ahora</button>
-                </div>
-                
-                <div class="producto">
-                    <div class="producto-image">
-
-                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Camiseta Proyecto Gaia">
-                    </div>
-                    <h3>Camiseta "Gaia"</h3>
-                    <p>Modelo unisex - Varios colores</p>
-                    <div class="precio">$25.000</div>
-                    <button>Comprar ahora</button>
-                </div>
-            </div>
-        </section> -->
-
         <!-- Sección Contacto y Voluntariado -->
-    <section id="contacto" class="contacto-voluntariado">
+        <section id="contacto" class="contacto-voluntariado">
             <div class="section-header">
                 <h2>Contáctanos y sé parte del cambio</h2>
                 <p>Tu ayuda hace la diferencia</p>
@@ -321,8 +266,62 @@
                         </div>
                         
                         <div class="form-group">
+                            <label for="pais">País</label>
+                            <select id="pais" name="pais" required>
+                                <option value="">Selecciona tu país</option>
+                                <option value="AR">Argentina</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="CL">Chile</option>
+                                <option value="CO" selected>Colombia</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="CU">Cuba</option>
+                                <option value="DO">República Dominicana</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="SV">El Salvador</option>
+                                <option value="GT">Guatemala</option>
+                                <option value="HN">Honduras</option>
+                                <option value="MX">México</option>
+                                <option value="NI">Nicaragua</option>
+                                <option value="PA">Panamá</option>
+                                <option value="PY">Paraguay</option>
+                                <option value="PE">Perú</option>
+                                <option value="PR">Puerto Rico</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="VE">Venezuela</option>
+                                <option value="ES">España</option>
+                                <option value="US">Estados Unidos</option>
+                                <option value="OT">Otro país</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
                             <label for="telefono">Teléfono</label>
-                            <input type="tel" id="telefono" name="telefono">
+                            <div class="telefono-group">
+                                <select id="codigo-pais" name="codigo_pais" style="width: 30%; margin-right: 10px;">
+                                    <option value="+57">+57 (CO)</option>
+                                    <option value="+54">+54 (AR)</option>
+                                    <option value="+591">+591 (BO)</option>
+                                    <option value="+56">+56 (CL)</option>
+                                    <option value="+506">+506 (CR)</option>
+                                    <option value="+53">+53 (CU)</option>
+                                    <option value="+1-809">+1-809 (DO)</option>
+                                    <option value="+593">+593 (EC)</option>
+                                    <option value="+503">+503 (SV)</option>
+                                    <option value="+502">+502 (GT)</option>
+                                    <option value="+504">+504 (HN)</option>
+                                    <option value="+52">+52 (MX)</option>
+                                    <option value="+505">+505 (NI)</option>
+                                    <option value="+507">+507 (PA)</option>
+                                    <option value="+595">+595 (PY)</option>
+                                    <option value="+51">+51 (PE)</option>
+                                    <option value="+1-787">+1-787 (PR)</option>
+                                    <option value="+598">+598 (UY)</option>
+                                    <option value="+58">+58 (VE)</option>
+                                    <option value="+34">+34 (ES)</option>
+                                    <option value="+1">+1 (US)</option>
+                                </select>
+                                <input type="tel" id="telefono" name="telefono" placeholder="Número" style="width: 65%;">
+                            </div>
                         </div>
                         
                         <div class="form-group">
@@ -338,7 +337,13 @@
                     <h3>¡Conviértete en parte de Nosotros!</h3>
                     <p>Únete a nuestro equipo de voluntarios y ayuda a transformar millones de vidas</p>
                     
-                    <form action="https://formspree.io/f/mqkrbeyd" method="POST">
+                    <form id="voluntario-form" action="https://formsubmit.co/proyectogaia@gmail.com" method="POST">
+                        <!-- Añadir estos campos ocultos para personalizar el correo -->
+                        <input type="hidden" name="_subject" value="Nueva solicitud de voluntariado - Proyecto Gaia">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://proyecto-gaia.pages.dev/gracias.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        
                         <div class="form-group">
                             <label for="v-nombre">Nombre completo</label>
                             <input type="text" id="v-nombre" name="nombre" required>
@@ -350,8 +355,62 @@
                         </div>
                         
                         <div class="form-group">
+                            <label for="v-pais">País</label>
+                            <select id="v-pais" name="pais" required>
+                                <option value="">Selecciona tu país</option>
+                                <option value="AR">Argentina</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="CL">Chile</option>
+                                <option value="CO" selected>Colombia</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="CU">Cuba</option>
+                                <option value="DO">República Dominicana</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="SV">El Salvador</option>
+                                <option value="GT">Guatemala</option>
+                                <option value="HN">Honduras</option>
+                                <option value="MX">México</option>
+                                <option value="NI">Nicaragua</option>
+                                <option value="PA">Panamá</option>
+                                <option value="PY">Paraguay</option>
+                                <option value="PE">Perú</option>
+                                <option value="PR">Puerto Rico</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="VE">Venezuela</option>
+                                <option value="ES">España</option>
+                                <option value="US">Estados Unidos</option>
+                                <option value="OT">Otro país</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
                             <label for="v-telefono">Teléfono</label>
-                            <input type="tel" id="v-telefono" name="telefono" required>
+                            <div class="telefono-group">
+                                <select id="v-codigo-pais" name="codigo_pais" style="width: 30%; margin-right: 10px;">
+                                    <option value="+57">+57 (CO)</option>
+                                    <option value="+54">+54 (AR)</option>
+                                    <option value="+591">+591 (BO)</option>
+                                    <option value="+56">+56 (CL)</option>
+                                    <option value="+506">+506 (CR)</option>
+                                    <option value="+53">+53 (CU)</option>
+                                    <option value="+1-809">+1-809 (DO)</option>
+                                    <option value="+593">+593 (EC)</option>
+                                    <option value="+503">+503 (SV)</option>
+                                    <option value="+502">+502 (GT)</option>
+                                    <option value="+504">+504 (HN)</option>
+                                    <option value="+52">+52 (MX)</option>
+                                    <option value="+505">+505 (NI)</option>
+                                    <option value="+507">+507 (PA)</option>
+                                    <option value="+595">+595 (PY)</option>
+                                    <option value="+51">+51 (PE)</option>
+                                    <option value="+1-787">+1-787 (PR)</option>
+                                    <option value="+598">+598 (UY)</option>
+                                    <option value="+58">+58 (VE)</option>
+                                    <option value="+34">+34 (ES)</option>
+                                    <option value="+1">+1 (US)</option>
+                                </select>
+                                <input type="tel" id="v-telefono" name="telefono" placeholder="Número" style="width: 65%;" required>
+                            </div>
                         </div>
                         
                         <div class="form-group">
@@ -363,6 +422,7 @@
                                 <option value="educacion">Apoyo personas en condición de vulnerabilidad</option>
                                 <option value="medico">Se parte Equipo de trabajo</option>
                                 <option value="eventos">Organización de eventos</option>
+                                <option value="donaciones">Donaciones</option>
                             </select>
                         </div>
                         
@@ -382,7 +442,6 @@
                 </div>
             </div>
         </section>
-
         <!-- Footer -->
         <footer>
             <div class="footer-container">
@@ -394,12 +453,12 @@
                     <p>Trabajando juntos por un mundo mejor para todos los seres vivos.</p>
                     
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/share/1FzKJ1qPTs/"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/dariusg242?utm_source=qr&igsh=aXo3Y29kem9jMncy"><i class="fab fa-instagram"></i></a>
-                        <a href="https://x.com/Darius65846512?t=fPJCFdja8wMLXQdF4sTeZQ&s=08"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.tiktok.com/@dariusg64?_t=ZS-8yStuxDaJGC&_r=1"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://www.reddit.com/u/DariusproyecGaia2024/s/EGJNYBCkbF"><i class="fab fa-reddit"></i></a>
-                        <a href="https://youtube.com/@proyectogaia-darius?si=s3MiHWcUJWPwvtRG"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/share/1FzKJ1qPTs/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/dariusg242?utm_source=qr&igsh=aXo3Y29kem9jMncy" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/Darius65846512?t=fPJCFdja8wMLXQdF4sTeZQ&s=08" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@dariusg64?_t=ZS-8yStuxDaJGC&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.reddit.com/u/DariusproyecGaia2024/s/EGJNYBCkbF" target="_blank"><i class="fab fa-reddit"></i></a>
+                        <a href="https://youtube.com/@proyectogaia-darius?si=s3MiHWcUJWPwvtRG" target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
@@ -430,20 +489,16 @@
                 <div class="footer-col">
                     <h4>Contacto</h4>
                     <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> Calle Solidaridad #123, Ciudad</li>
-                        <li><i class="fas fa-phone"></i> +57 123 456 7890</li>
+                        <li><i class="fas fa-phone"></i> +57 324 677 3728</li>
                         <li><i class="fas fa-envelope"></i> proyectogaia@gmail.com</li>
+                        <li><i class="fas fa-envelope"></i> darius372018@gmail.com</li>
                         <!-- <li><i class="fas fa-clock"></i> Lunes a Viernes: 8am - 5pm</li> -->
                     </ul>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>&copy; 2023 Proyecto Gaia. Todos los derechos reservados.</p>
-                <div class="legal-links">
-                    <a href="#">Política de Privacidad</a>
-                    <a href="#">Términos y Condiciones</a>
-                </div>
+                <p>&copy; 2025 <a href="https://aureaweb.pages.dev/Index" target="_blank">Áurea Web</a>. Todos los derechos reservados.</p>
             </div>
         </footer>
         <script src="./js/main.js"></script>

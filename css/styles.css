@@ -848,91 +848,6 @@ nav a:hover::after {
   transform: scale(1.05);
 }
 
-/* --- SECCIÓN TIENDA MEJORADA --- */
-.tienda {
-  background-color: var(--color-blanco);
-  position: relative;
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.productos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 2.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.producto {
-  background-color: var(--color-blanco);
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: var(--sombra-suave);
-  transition: var(--transicion);
-  position: relative;
-  border: 1px solid rgba(121, 85, 72, 0.1);
-}
-
-.producto:hover {
-  transform: translateY(-10px);
-  box-shadow: var(--sombra-hover);
-}
-
-.producto-image {
-  height: 280px;
-  overflow: hidden;
-}
-
-.producto-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: var(--transicion);
-}
-
-.producto:hover .producto-image img {
-  transform: scale(1.1);
-}
-
-.producto-content {
-  padding: 1.5rem;
-  text-align: center;
-}
-
-.producto h3 {
-  margin-bottom: 0.5rem;
-  color: var(--color-tierra);
-}
-
-.precio {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--verde-primario);
-  margin: 1rem 0;
-}
-
-.producto button {
-  width: 100%;
-  margin-top: 1.5rem;
-  padding: 7px 18px;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: var(--transicion);
-  background: linear-gradient(
-    135deg,
-    var(--color-tierra),
-    var(--verde-primario)
-  );
-  color: var(--color-blanco);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-.producto button:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--sombra-suave);
-}
-
 /* --- SECCIÓN CONTACTO Y VOLUNTARIADO MEJORADA --- */
 .contacto-voluntariado {
   background: linear-gradient(
@@ -1066,6 +981,32 @@ nav a:hover::after {
   transform: translateY(-3px);
   box-shadow: var(--sombra-suave);
 }
+
+.telefono-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.telefono-group select,
+.telefono-group input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid var(--color-gris-medio);
+    border-radius: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    transition: var(--transicion);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.telefono-group select:focus,
+.telefono-group input:focus {
+    border-color: var(--verde-secundario);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.15);
+}
+
 
 /* --- FOOTER  --- */
 footer {
@@ -1225,21 +1166,13 @@ footer::before {
   font-size: 0.9rem;
 }
 
-.legal-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 0.5rem;
-}
-
-.legal-links a {
+.copyright a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   transition: var(--transicion);
-  font-size: 0.9rem;
 }
 
-.legal-links a:hover {
+.copyright a:hover {
   color: var(--color-blanco);
 }
 
@@ -1363,4 +1296,14 @@ footer::before {
     flex-direction: column;
     gap: 0.5rem;
   }
+  
+  .telefono-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .telefono-group select,
+    .telefono-group input {
+        width: 100% !important;
+    }
 }
