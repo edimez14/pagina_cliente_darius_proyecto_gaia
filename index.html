@@ -65,21 +65,30 @@
                 <img src="./assets/Ico_planeta_tierra.png" alt="logo planeta">
                 <span>PROYECTO GAIA</span>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#animales">Animales</a></li>
-                    <li><a href="#contaminacion">Contaminación</a></li>
-                    <li><a href="#mision">Misión</a></li>
-                    <li><a href="#historia">Historia</a></li>
-                    <li><a href="#personas">Personas</a></li>
-                    <!-- <li><a href="#tienda">Tienda</a></li> -->
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="header-buttons">
-                <!-- <button>Donar</button> -->
-                <button>Voluntario</button>
+            
+            <button class="hamburger" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="menu-container">
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#animales">Animales</a></li>
+                        <li><a href="#contaminacion">Contaminación</a></li>
+                        <li><a href="#mision">Misión</a></li>
+                        <li><a href="#historia">Historia</a></li>
+                        <li><a href="#personas">Personas</a></li>
+                        <!-- <li><a href="#tienda">Tienda</a></li> -->
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="header-buttons">
+                    <!-- <button>Donar</button> -->
+                    <button>Voluntario</button>
+                </div>
             </div>
         </header>
 
@@ -143,7 +152,7 @@
                     <p>En Proyecto Gaia, trabajamos para combatir la contaminación a nivel mundial a través de programas reciclaje masivos, la reforestacion global. ¡Únete a nosotros en esta lucha por un planeta más sano!</p>
                 </div>
                 <div class="contaminacion-image">
-                    <img src="./assets/imagen contaminacion 2.jpeg" alt="Contaminación en las ciudades">
+                    <img src="./assets/basura-calles-bogota-1.jpg" alt="Contaminación en las ciudades">
                 </div>
             </div>
         </section>
@@ -254,11 +263,7 @@
             <div class="contacto-container">
                 <div class="formulario">
                     <h3>Envíanos un mensaje</h3>
-                    <form id="whatsapp-form"action="https://formsubmit.co/proyectogaia1979@gmail.com" method="POST">
-                        <!-- Añadir estos campos ocultos para personalizar el correo -->
-                        <input type="hidden" name="_subject" value="Nueva mensaje - Proyecto Gaia">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_captcha" value="false">
+                    <form id="whatsapp-form">
                         <div class="form-group">
                             <label for="nombre">Nombre completo</label>
                             <input type="text" id="nombre" name="nombre" required>
