@@ -516,13 +516,142 @@ nav a:hover::after {
   fill: var(--color-arena);
 }
 
-/* --- SECCIÓN ANIMALES MEJORADA --- */
-.animales {
+/* --- SECCIÓN QUIÉNES SOMOS --- */
+.quienes-somos {
   background: linear-gradient(
     135deg,
     rgba(46, 125, 50, 0.1) 0%,
     rgba(2, 136, 209, 0.1) 100%
   );
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.quienes-somos-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quienes-somos-text {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 4rem auto;
+}
+
+.quienes-somos-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: var(--color-tierra);
+  line-height: 1.7;
+}
+
+.problematicas-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.problematica-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2.2rem 1.5rem;
+  border-radius: 20px;
+  box-shadow: var(--sombra-suave);
+  transition: var(--transicion);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(121, 85, 72, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.problematica-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.problematica-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--sombra-hover);
+}
+
+.problematica-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    var(--verde-secundario),
+    var(--azul-primario)
+  );
+  border-radius: 50%;
+  color: var(--color-blanco);
+  font-size: 2.2rem;
+  transition: var(--transicion);
+}
+
+.problematica-card:hover .problematica-icon {
+  transform: rotate(15deg) scale(1.1);
+}
+
+.problematica-card h3 {
+  margin-bottom: 1rem;
+  color: var(--verde-primario);
+  position: relative;
+  padding-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.problematica-card h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--verde-secundario),
+    var(--azul-primario)
+  );
+  border-radius: 2px;
+}
+
+.problematica-card p {
+  color: var(--color-tierra);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .problematicas-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .problematica-card {
+    padding: 1.8rem 1.2rem;
+    min-height: 250px;
+  }
+}
+
+/* --- SECCIÓN ANIMALES MEJORADA --- */
+.animales {
+  background: linear-gradient(
+      rgba(248, 244, 233, 0.9),
+      rgba(248, 244, 233, 0.9)
+    ),
+    url("../assets/fondo-1.jpg") center/cover no-repeat;
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;

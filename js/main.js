@@ -190,3 +190,23 @@ document.addEventListener('DOMContentLoaded', function () {
         lastScrollTop = scrollTop;
     });
 });
+
+// Animaciones al hacer scroll
+document.addEventListener('DOMContentLoaded', function () {
+    const problematicaCards = document.querySelectorAll('.problematica-card');
+
+    function checkScroll() {
+        problematicaCards.forEach(card => {
+            const cardPosition = card.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+
+            if (cardPosition < screenPosition) {
+                card.classList.add('visible');
+            }
+        });
+    }
+
+    // Verificar al cargar y al hacer scroll
+    window.addEventListener('scroll', checkScroll);
+    checkScroll(); // Verificar al cargar la página
+});
