@@ -1,3 +1,19 @@
+// Botón de WhatsApp flotante
+const whatsappButton = document.querySelector('.whatsapp-float');
+const header = document.querySelector('header');
+
+function handleScroll() {
+    const scrollPosition = window.scrollY || window.pageYOffset;
+
+    // Mostrar el botón después de que el header desaparezca (ajusta el 100 según tu header)
+    if (scrollPosition > 100) {
+        whatsappButton.classList.add('show');
+    } else {
+        whatsappButton.classList.remove('show');
+    }
+}
+
+
 document.getElementById('whatsapp-form').addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -30,7 +46,7 @@ document.getElementById('whatsapp-form').addEventListener('submit', function (e)
         `Mensaje: \n${mensaje}`;
 
     // Abrir WhatsApp con el mensaje predefinido
-    window.open(`https://wa.me/573011959402?text=${texto}`, '_blank');
+    window.open(`https://wa.me/573189656717?text=${texto}`, '_blank');
 
     // Opcional: Resetear el formulario después del envío
     this.reset();
